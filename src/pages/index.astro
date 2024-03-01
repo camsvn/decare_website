@@ -1,8 +1,9 @@
 ---
 import PageLayout from "@/layouts/Base";
 import { Image } from "astro:assets";
-import logoImg from "/src/assets/DeCare Logo.png";
+import logoImg from "/src/assets/DeCare Logo_hires.png";
 import bubbleBg from "/src/assets/bubble background.svg";
+import ourWayImg from "/src/assets/our_way_diagram.png";
 ---
 
 <PageLayout meta={{ title: "DeCare Software Solutions" }}>
@@ -12,6 +13,13 @@ import bubbleBg from "/src/assets/bubble background.svg";
 			alt="DeCare logo"
 			loading="eager"
 		/>
+    <!-- <Image
+			src="https://res.cloudinary.com/de6kzzp5h/image/upload/f_auto,q_auto/v1/DeCare/DeCare_Logo_tdgvqh"
+			alt="CDN DeCare logo"
+			loading="eager"
+      width={174}
+      height={60}
+		/> -->
     <Image
 			src={bubbleBg}
 			alt="Bubble Background"
@@ -54,22 +62,34 @@ import bubbleBg from "/src/assets/bubble background.svg";
 
   <section>
     <h1 class="title">How we do Software.</h1>
+    <Image
+			src={ourWayImg}
+			alt="Our way diagram"
+			loading="eager"
+		/>
+    <!-- <Image
+			src="https://res.cloudinary.com/de6kzzp5h/image/upload/f_auto,q_auto/v1/DeCare/Our_way_diagram_sierci"
+			alt="CDN Our way diagram"
+			loading="eager"
+      width={1256}
+      height={1256}
+		/> -->
     <p>
       Our journey taught us that there should be an operation strategy, 
       so as to bring <u>Uniformity & Consistency</u> in our operations. 
       From our learnings of the past and the predictions of the future, 
       we evolved the circle above into
-      <u>4 equally important quarters</u>, 
+      <u>4 equally important quarters</u>:
       <span class="block">
-        <ol type="1">
+        <!-- <ol type="1">
           <li>Understand</li>
           <li>Solve</li>
           <li>Train</li>
           <li>Support</li>
-        </ol>
-        <!-- 1) Understand, 2) Solve, 3) Train and 4) Support. -->
+        </ol> -->
+        1) Understand, 2) Solve, 3) Train and 4) Support.
       </span> 
-      <span class="block">This is how we operate.</span>
+      <!-- <span class="block">This is how we operate.</span> -->
     </p>
   </section>
 
@@ -79,6 +99,24 @@ import bubbleBg from "/src/assets/bubble background.svg";
       In our journey of 18 years, we happened to make a few folks happy with our solutions. 
       A glimpse is given below.
     </p>
+
+    <div class="flex justify-around items-center h-20 border rounded-xl border-accent font-square font-light">
+      <div class="flex flex-col items-center">
+        <span class="text-3xl">18</span>
+        <span class="text-sm">Years</span>
+      </div>
+      <div class="flex flex-col items-center relative left-2">
+        <span class="text-3xl">41</span>
+        <span class="text-sm">Products</span>
+      </div>
+      <div class="flex flex-col items-center relative left-2">
+        <span class="text-3xl">
+          150<sup>+</sup>
+        </span>
+        <span class="text-sm relative right-2">Clients</span>
+      </div>
+    </div>
+    
   </section>
 
   <section>
