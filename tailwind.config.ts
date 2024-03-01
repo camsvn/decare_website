@@ -28,6 +28,7 @@ export default {
 			},
 			fontFamily: {
 				// Add any custom fonts here
+				primary: ['Noto Sans','Arial', 'sans-serif'],
 				sans: [...fontFamily.sans],
 				serif: [...fontFamily.serif],
 			},
@@ -110,7 +111,7 @@ export default {
 					},
 				},
 				".title": {
-					"@apply text-2xl font-semibold text-accent-2": {},
+					"@apply text-2xl font-bold text-accent-2 text-textColor": {},
 				},
 			});
 		}),
