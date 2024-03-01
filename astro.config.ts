@@ -16,6 +16,8 @@ export default defineConfig({
 		},
 	},
 	image: {
+		domains: ["res.cloudinary.com"],
+		remotePatterns: [{ protocol: "https" }],
 		// https://docs.astro.build/en/guides/assets/#using-sharp
 		service: sharpImageService(),
 	},
