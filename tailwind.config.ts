@@ -29,6 +29,7 @@ export default {
 			fontFamily: {
 				// Add any custom fonts here
 				primary: ['Noto Sans','Arial', 'sans-serif'],
+				square: ['Square721 BT', 'mono'],
 				sans: [...fontFamily.sans],
 				serif: [...fontFamily.serif],
 			},
