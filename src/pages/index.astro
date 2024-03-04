@@ -4,6 +4,9 @@ import { Image } from "astro:assets";
 import logoImg from "/src/assets/DeCare Logo_hires.png";
 import bubbleBg from "/src/assets/bubble background.svg";
 import ourWayImg from "/src/assets/our_way_diagram.png";
+import reachUSLocationIco from "/src/assets/icons/location.png";
+import reachUSPhonneIco from "/src/assets/icons/phone.png";
+import reachUSEmailIco from "/src/assets/icons/email.png";
 ---
 
 <PageLayout meta={{ title: "DeCare Software Solutions" }}>
@@ -127,6 +130,38 @@ import ourWayImg from "/src/assets/our_way_diagram.png";
       If you want to get something done by computers, let us know, because we are a team who finds fulfilment 
       in making the computer dance to your lyrics, composed by us.
     </p>
+    <div>
+      <div class="flex items-center">
+        <Image
+          src={reachUSLocationIco}
+          alt="Address icon"
+          loading="eager"
+        />
+        <span>#27, 7th Cross, 1st Main Road, Kempaiah Nagar, Huralichikanahalli, Hesaraghatta Main Road, Bangalore - 90</span>
+      </div>
+      <div class="flex items-center">
+        <Image
+          src={reachUSPhonneIco}
+          alt="Contact icon"
+          loading="eager"
+        />
+        <div>
+          <span>+91 9447 219563</span>
+          <span class="block">+91 8086 358930</span>
+        </div>
+      </div>
+      <div class="flex items-center">
+        <Image
+          src={reachUSEmailIco}
+          alt="Email icon"
+          loading="eager"
+        />
+        <div>
+          <span>info@decare.team</span>
+          <span class="block">roby@decare.team</span>
+        </div>
+      </div>
+    </div>
   </section>
 
   <span class="block text-[0.65rem]/[0.8rem] text-center">A big shoutout to  www.vecteezy.com who could read our minds to some 60% 
