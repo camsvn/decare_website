@@ -1,0 +1,307 @@
+---
+import PageLayout from "@/layouts/Base";
+import { Image } from "astro:assets";
+import logoImg from "/src/assets/DeCare Logo_hires.png";
+import bubbleBg from "/src/assets/bubble background.svg";
+import ourWayImg from "/src/assets/our_way_diagram.png";
+
+import DeCare_Landing_Floor from '@/components/Decare_landing_floor';
+
+import reachUSLocationIco from "/src/assets/icons/location.png";
+import reachUSPhonneIco from "/src/assets/icons/phone.png";
+import reachUSEmailIco from "/src/assets/icons/email.png";
+
+import financeIco from "/src/assets/icons/finance hex.png";
+import hotelIco from "/src/assets/icons/hotel hex.png";
+import schoolIco from "/src/assets/icons/school hex.png";
+import hospitalIco from "/src/assets/icons/hospital hex.png";
+import industryIco from "/src/assets/icons/industrie hex.png";
+
+---
+
+<PageLayout meta={{ title: "DeCare Software Solutions" }}>
+  <section class="h-screen relative overflow-hidden">
+    <div class="w-60 relative z-10">
+      <Image
+        src={logoImg}
+        alt="DeCare logo"
+        loading="eager"
+      />
+    </div>
+    <div class="absolute top-0 right-0 w-full h-full pointer-events-none">
+      <DeCare_Landing_Floor/>
+    </div>
+    <!-- <Image
+      src="https://res.cloudinary.com/de6kzzp5h/image/upload/f_auto,q_auto/v1/DeCare/DeCare_Logo_tdgvqh"
+      alt="CDN DeCare logo"
+      loading="eager"
+      width={174}
+      height={60}
+    /> -->
+    <!-- <Image
+      src={bubbleBg}
+      alt="Bubble Background"
+      loading="eager"
+    /> -->
+    <div class="absolute left-2/4 transform -translate-x-1/2 bottom-20 container">
+      <span class="block text-center">"We are good in understanding needs and providing software solutions..."</span>
+      <span class="block text-center text-[0.65rem]/[0.8rem]">
+        (Its our confidence gained from experience not our pride.)
+      </span>
+      <span class="block text-center text-[0.65rem]/[0.8rem]">
+        Scroll down for a 5 minutes read.
+      </span>
+    </div>
+  </section>
+  <section>
+    <h1 class="title">Why we are into Softwares</h1>
+    <p>
+      We are fascinated by the capabilities of computers and its growth in every sense and finds nirvana in 
+      controlling them, through the codes we compose.. Then we understood that nirvana alone won't win you bread.. 
+      Then we thought to use our skills to help the needy to win our bread, and nirvana as a kick.
+    </p>
+    <p>
+      So we founded Data and People Care. In short, De Care to create affordable software's which precisely 
+      serves the purpose of the clients and give us bread and the kick we mentioned.
+    </p>
+    <p>
+      Our software's can comfortably capture & organize data, and analyse it to the highest level of accuracy, 
+      and reproduce it in a sensible way, to get a clear picture of the scene, to communicate and set directions.
+    </p>
+    <p>
+      Letting the computer to handle this tedious, boring and repetitive, but very important area of 
+      data capture and analytics can reduced stress on employees making them more human towards 
+      colleagues and customers.
+    </p>
+    <p>
+      We started our operations in the year 2000 from TBI NIT (formerly REC) Calicut, Kerala with 
+      sponsorship of Government of India National Science and Technology Entrepreneurship Development Board. 
+      As years passed by, we moved to software capital Bangalore.
+    </p>
+  </section>
+
+  <section>
+    <h1 class="title">How we do Software.</h1>
+    <div class="clearfix">
+    <Image
+			src={ourWayImg}
+			alt="Our way diagram"
+			loading="eager"
+      class="float-left mr-4 mb-4 w-1/2 md:w-1/3"
+		/>
+    <!-- <Image
+			src="https://res.cloudinary.com/de6kzzp5h/image/upload/f_auto,q_auto/v1/DeCare/Our_way_diagram_sierci"
+			alt="CDN Our way diagram"
+			loading="eager"
+      width={1256}
+      height={1256}
+		/> -->
+    <p>
+      Our journey taught us that there should be an operation strategy, 
+      so as to bring <u>Uniformity & Consistency</u> in our operations. 
+      From our learnings of the past and the predictions of the future, 
+      we evolved the circle above into
+      <u>4 equally important quarters</u>:
+      <span class="block">
+        <!-- <ol type="1">
+          <li>Understand</li>
+          <li>Solve</li>
+          <li>Train</li>
+          <li>Support</li>
+        </ol> -->
+        1) Understand, 2) Solve, 3) Train and 4) Support.
+      </span> 
+      <!-- <span class="block">This is how we operate.</span> -->
+    </p>
+  </div>
+  </section>
+
+
+  <section>
+    <h1 class="title">What we did</h1>
+    <p>
+      In our journey of 18 years, we happened to make a few folks happy with our solutions. 
+      A glimpse is given below.
+    </p>
+
+    <div class="flex justify-around items-center h-20 border rounded-xl border-accent font-square font-light">
+      <div class="flex flex-col items-center">
+        <span class="text-3xl">18</span>
+        <span class="text-sm relative left-1">Years</span>
+      </div>
+      <div class="flex flex-col items-center relative left-2">
+        <span class="text-3xl">41</span>
+        <span class="text-sm">Products</span>
+      </div>
+      <div class="flex flex-col items-center relative left-2">
+        <span class="text-3xl">
+          150<sup>+</sup>
+        </span>
+        <span class="text-sm relative right-2">Clients</span>
+      </div>
+    </div>
+
+    <div>
+      <div class="text-right">
+        <div>
+          <h3 class="text-xl inline font-normal relative bottom-3">Finance</h3>
+          <Image
+          src={financeIco}
+          alt="Finance icon"
+          loading="eager"
+          class="w-[5.2rem] inline-block"
+          />
+          <hr class="relative w-9/12 left-1/6 bottom-10 z-[-1]">
+        </div>
+        <div>
+          <p>
+            <span>Safe Guard : </span>
+            Chitty Management Information System 
+          </p>
+          <p>
+            <span>Microfin : </span>
+            Micro Credit Management Information System 
+          </p>
+          <p>
+            <span>FinBank : </span>
+            For Financial Bank
+          </p>
+          <p>
+            <span>ChequeMate : </span>
+            Cheque Printing, Cash Book, Bank Book Registers 
+          </p>
+          <p>
+            <span>Collection : </span>
+            Bank Register, Cash Register, Bank Reconciliation  
+          </p>
+          <p>
+            <span>RDC : </span>
+            For R D Collection Agents 
+          </p>
+          <p>
+            <span>Jwell Chitty : </span>
+            Chitty software for Jewellery
+          </p>
+        </div>
+      </div>
+      <div class="text-left">
+        <h3 class="text-xl inline font-normal">Hotels</h3>
+        <Image
+        src={hotelIco}
+        alt="Hotel icon"
+        loading="eager"
+        class="w-[5.2rem] inline"
+        />
+        <hr>
+        <div>
+          <p>
+            <span>Reside : </span>
+            Hospitality Management Information System
+          </p>
+        </div>
+      </div>
+      <div class="text-right">
+        <h3 class="text-xl inline font-normal">Schools & Colleges</h3>
+        <Image
+        src={schoolIco}
+        alt="Hotel icon"
+        loading="eager"
+        class="w-[5.2rem] inline"
+        />
+        <hr>
+        <div>
+          <p>
+            <span>Vidya : </span>
+            School Management Information System
+          </p>
+        </div>
+      </div>
+      <div class="text-left">
+        <h3 class="text-xl inline font-normal">Hospitals</h3>
+        <Image
+        src={hospitalIco}
+        alt="Hotel icon"
+        loading="eager"
+        class="w-[5.2rem] inline"
+        />
+        <hr>
+        <div>
+          <p>
+            <span>Hospital : </span>
+            Hospital Management Information System
+          </p>
+        </div>
+        <div>
+          <p>
+            <span>Scan Ease : </span>
+            Ultra sound Scan Image Capture and Report Information System
+          </p>
+        </div>
+        <div>
+          <p>
+            <span>Lab Ease : </span>
+            Diagnosing Centers
+          </p>
+        </div>
+        <div>
+          <p>
+            <span>Clinic Plus : </span>
+            Clinic Management
+          </p>
+        </div>
+        <div>
+          <p>
+            <span>Pharm : </span>
+            Pharmacy Management
+          </p>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <section>
+    <h1 class="title">Reach Us</h1>
+    <p>
+      If you want to get something done by computers, let us know, because we are a team who finds fulfilment 
+      in making the computer dance to your lyrics, composed by us.
+    </p>
+    <div>
+      <div class="flex items-center">
+        <Image
+          src={reachUSLocationIco}
+          alt="Address icon"
+          loading="eager"
+        />
+        <span>#27, 7th Cross, 1st Main Road, Kempaiah Nagar, Huralichikanahalli, Hesaraghatta Main Road, Bangalore - 90</span>
+      </div>
+      <div class="flex items-center">
+        <Image
+          src={reachUSPhonneIco}
+          alt="Contact icon"
+          loading="eager"
+        />
+        <div>
+          <span>+91 9447 219563</span>
+          <span class="block">+91 8086 358930</span>
+        </div>
+      </div>
+      <div class="flex items-center">
+        <Image
+          src={reachUSEmailIco}
+          alt="Email icon"
+          loading="eager"
+        />
+        <div>
+          <span>info@decare.team</span>
+          <span class="block">roby@decare.team</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <span class="block text-[0.65rem]/[0.8rem] text-center">A big shoutout to  www.vecteezy.com who could read our minds to some 60% 
+    and created vectors reducing our job to 40%
+  </span>
+	
+</PageLayout>

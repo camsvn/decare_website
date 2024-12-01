@@ -4,7 +4,8 @@
 @layer base {
 	:root {
 		color-scheme: light;
-		--theme-bg: #fafafa;
+		/* --theme-bg: #fafafa; */
+		--theme-bg: #ffffff;
 		--theme-link: #567c77;
 		/* --theme-text: #22272a; */
 		/* --theme-accent: #cc2a42; */
@@ -31,7 +32,7 @@
 	}
 
 	html body {
-		@apply mx-auto flex h-full max-w-3xl flex-col bg-bgColor px-8 pt-16 font-primary text-sm font-light text-textColor antialiased;
+		@apply mx-auto flex h-full container flex-col bg-bgColor px-8 2xl:px-0 font-primary text-sm font-light text-textColor antialiased;
 	}
 }
 
@@ -43,4 +44,19 @@
 	font-family: 'Square721 BT';
 	src: url('../assets/squ721rm.ttf');
 };
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#defaultCanvas0 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100vh !important;
+	width: 100vw !important;
+	z-index: -1;
+}
 
